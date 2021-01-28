@@ -1,4 +1,6 @@
 bin
+.vscode
+.idea
 
 # Prerequisites
 *.d

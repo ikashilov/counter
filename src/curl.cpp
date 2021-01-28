@@ -9,7 +9,7 @@ size_t writeCallback(void *contents, size_t size, size_t nmemb, void *userp)
     return size * nmemb;
 }
 
-std::string getURL(const char* url="https://en.wikipedia.org/wiki/Napoleon")
+std::string getURL(const char* url)
 {
     CURL *curl;
     CURLcode res;
@@ -30,11 +30,4 @@ std::string getURL(const char* url="https://en.wikipedia.org/wiki/Napoleon")
     }
 
     return readBuffer;
-}
-
-
-int main()
-{
-  std::cout<<getURL();
-  return 0;
 }
