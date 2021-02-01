@@ -21,4 +21,10 @@ __Output format__
 You need to output one number - an estimate of the number of unique requests. The score does not have to be integer.
 ***
 
-The exact soulution can be found in `solution.cpp`. You try out the `main.cpp` for some custom paramtrizing
+### Solution
+The idea comes from [here](http://highscalability.com/blog/2012/4/5/big-data-counting-how-to-count-a-billion-distinct-objects-us.html)
+
+The exact task solution implements a **linear probabilistic counter** and can be found in `solution.cpp`. The rest of the project provides customizable handles for playing with various data sources and hash functiuons.
+
+### UPD:
+To use a web page as datasource you need to install *libcurl* from [here](https://curl.haxx.se/download.html)
